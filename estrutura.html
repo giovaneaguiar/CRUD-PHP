@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura</title>
+</head>
+<body>
+    <style type="text/css">
+    /* estilos css */
+     *{
+           margin: 0;
+           padding: 0;
+    }
+        body {
+            background-color: #8968CD;
+        }
+
+        #corpo {
+            width: 1000px;;
+            background-color: #fff;
+            margin: 0 auto;
+            border-left: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+        }
+
+        #topo {
+            padding: 20px 25px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        #topo a{
+            color: #333;
+            text-decoration: none;
+            font: 20px Arial;
+            
+        }
+        #topo a:hover {
+        text-decoration: underline;
+        }
+
+        #conteudo {
+            background-color: #fff;
+            padding: 20px 25px;
+        }
+        #conteudo h1 {
+            font:24px Arial;
+            color: #8968CD;
+            margin-bottom: 25px;
+        }
+        #conteudo article {
+            margin-bottom: 20px;
+        }
+        #conteudo article h2 {
+            padding-bottom: 8px;
+        }
+        #conteudo article h2 a{
+            font: 22px Arial;
+            color: #333;
+            text-decoration: none;
+            
+        }
+        #conteudo article h2 a:hover {
+            text-decoration: underline;
+        }
+
+        #conteudo article p{
+            font: 16px Arial;
+            color: #333;
+            padding-left: 4px;
+        }
+    </style>
+ <div id="corpo">
+    <div id="topo">
+        <header>
+            <!-- cabeçalho -->
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Sobre</a>
+            </nav>
+        </header>
+    </div>
+    <div id="conteudo">
+        <section>
+            <h1>Postagens:</h1>
+            <!-- listar postagens -->
+            <article>
+                <header>
+                    <h2> <a href="#">Título da minha postagem</a></h2>
+                </header>
+                <p>Conteúdo da minha postagem</p>
+            </article>
+
+        </section>
+    </div>
+ </div>
+</body>
+</html>
