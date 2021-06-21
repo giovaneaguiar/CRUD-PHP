@@ -1,11 +1,13 @@
 <section>
     <h1>Postagens:</h1>
     <!-- listar postagens -->
+    {% for postagem in postagens %}
     <article>
         <header>
-            <h2> <a href="#">Título da minha postagem</a></h2>
+            <h2> <a href="#">{{ postagem.titulo }}</a></h2>
         </header>
-        <p>Conteúdo da minha postagem</p>
+        <p>{{ postagem.conteudo }}</p>
     </article>
+    {% endfor %}
 
 </section>
