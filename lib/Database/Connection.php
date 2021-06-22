@@ -10,7 +10,9 @@ abstract class Connection
             self::$conn = new PDO('mysql: host=localhost; dbname=serie-criando-site;', 'root', '');
             //self - atributos estáticos
             //this - não estáticos
-            return self::$conn;
+
         }
+            return self::$conn;
+        
     }
 }
