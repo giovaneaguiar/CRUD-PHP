@@ -26,7 +26,15 @@ class Core
             $controller = 'ErroController';
         }
 
-        call_user_func_array(array(new $controller, $acao), array());
+        if(isset($urlGet['id']) && ($urlGet['id'] != null)){
+            $id = $urlGet['id'];
+
+        }
+        else {
+            $id = null;
+        }
+
+        call_user_func(array(new $controller, $acao), $id);
         //chama método de forma dinamica, nesse caso chamou o function index()
         //em HomeController.php.
     }
