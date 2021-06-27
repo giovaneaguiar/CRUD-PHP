@@ -14,10 +14,13 @@
         <th>ALTERAÇÃO</th>
         <th>DELEÇÃO</th>
     </tr>
+
+    {% for postagem in postagens %}
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>{{ postagem.id }}</th>
+        <th>{{ postagem.titulo }}</th>
+        <th>ALTERAÇÃO</th>
+        <th>DELEÇÃO</th>
     </tr>
+    {% endfor %}
 </table>
