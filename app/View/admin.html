@@ -19,7 +19,7 @@
     <tr>
         <th>{{ postagem.id }}</th>
         <th>{{ postagem.titulo }}</th>
-        <th>ALTERAÇÃO</th>
+        <th><a href="http://localhost/CRUD-PHP/?pagina=admin&metodo=change&id={{ postagem.id }}">ALTERAÇÃO</a></th>
         <th>DELEÇÃO</th>
     </tr>
     {% endfor %}
