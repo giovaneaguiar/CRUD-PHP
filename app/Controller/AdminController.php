@@ -99,9 +99,29 @@
                 </script>';
             }
 
-            
-            
+        }
 
+        public function delete($paramId){
+
+            try {
+                Postagem::delete($paramId);
+                echo '<script>
+                alert("Publicação Deletada com sucesso!");
+                </script>';
+                echo '<script>
+                location.href="http://localhost/CRUD-PHP/?pagina=admin&metodo=index"
+                </script>';
+            }
+
+            catch(Exception $e) {
+                echo '<script>
+                alert("' .$e->getMessage(). '");
+                </script>';
+                echo '<script>
+                location.href="http://localhost/CRUD-PHP/?pagina=admin&metodo=index"
+                </script>';
+
+            }
 
         }
 	}
