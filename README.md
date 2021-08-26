@@ -1,5 +1,5 @@
 <h1 align="center">CRUD - PHP</h1>
-<p align="center">Projeto: PHP + MVC + CRUD.</p>
+<p align="center">Projeto: <strong>PHP + MVC + CRUD</strong>.</p>
 
 
 As seguintes <strong>ferramentas</strong> foram usadas na construção do <strong>projeto</strong>:
